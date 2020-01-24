@@ -1,5 +1,16 @@
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 22:51:27] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 22:51:50] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 22:53:06] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:02:11] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:02:12] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:02:25] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:02:26] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:02:30] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:02:31] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:02:57] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:02:57] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:06:35] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -15,96 +26,14 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 12, in index
-    db = Database()
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\database.py", line 13, in __init__
-    self.db = self.connection()
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\database.py", line 27, in connection
-    return cursor
-UnboundLocalError: local variable 'cursor' referenced before assignment
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 16:41:01] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 16:43:05] "GET /db.log HTTP/1.1" 404 -
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-ERROR:database:OperationalError(1045, "Access denied for user 'root'@'localhost' (using password: YES)"), 1045
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 16:43:30] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 16:44:07] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 16:44:07] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:01:15] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:01:17] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:01:22] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:01:23] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:02:04] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:02:04] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:02:08] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:02:08] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:02:14] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:02:14] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:02:31] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:02:31] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:02:43] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:02:43] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:09:12] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:09:12] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:11:39] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:11:39] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:11:47] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:11:47] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:19:27] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:20:18] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:20:18] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:20:33] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:20:33] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:20:55] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:20:55] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:21:16] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:21:17] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:23:49] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:23:49] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:25:47] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:25:47] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:26:11] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:26:11] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:27:12] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:27:12] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:27:39] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:27:39] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:27:57] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:27:57] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:28:03] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:28:03] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:28:21] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:28:21] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:28:38] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:28:38] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 22, in show_note
+    note = DBHelpers().see_note(slug)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 16, in see_note
+    self.mysql.execute("SELECT * FROM {} WHERE slug={} LIMIT 1".format(self.database.get_notes_table_name(),note_slug))
+AttributeError: 'Database' object has no attribute 'get_notes_table_name'
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:07:53] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:07:53] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -120,12 +49,29 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 13, in index
-    user_notes = db.list_user_notes(userID)
-AttributeError: 'Database' object has no attribute 'list_user_notes'
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:32:52] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:32:53] "GET /favicon.ico HTTP/1.1" 404 -
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 22, in show_note
+    note = DBHelpers().see_note(slug)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 16, in see_note
+    self.mysql.execute("SELECT * FROM {}notes WHERE slug={} LIMIT 1".format(os.getenv('DATABASE_PREFIX'),note_slug))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'test' in 'where clause'")
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:08:37] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -141,14 +87,30 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes()
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 6, in __init__
-    self.mysql = db_instance.connection()
-NameError: name 'db_instance' is not defined
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:39:07] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:39:08] "GET /favicon.ico HTTP/1.1" 404 -
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 22, in show_note
+    note = DBHelpers().see_note(slug)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 16, in see_note
+    self.mysql.execute("SELECT * FROM {}notes WHERE slug=`{}`".format(os.getenv('DATABASE_PREFIX'),note_slug))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'test' in 'where clause'")
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:10:28] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:10:29] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -164,13 +126,30 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes()
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 6, in __init__
-    self.mysql = database.connection()
-NameError: name 'database' is not defined
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:39:50] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 22, in show_note
+    note = DBHelpers().see_note(slug)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 16, in see_note
+    self.mysql.execute("SELECT * FROM {}notes WHERE slug LIKE {} LIMIT 1".format(os.getenv('DATABASE_PREFIX'),note_slug))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'test' in 'where clause'")
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:12:51] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:12:51] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -186,66 +165,29 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes()
-TypeError: list_user_notes() missing 1 required positional argument: 'user_id'
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:40:28] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:41:02] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:41:34] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:41:34] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:42:13] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 17:42:13] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
-Traceback (most recent call last):
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\mysql\connector\abstracts.py", line 301, in config
-    DEFAULT_CONFIGURATION[key]
-KeyError: 'cursorclass'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
-    response = self.full_dispatch_request()
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes(userID)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 6, in __init__
-    self.mysql = self.database.connection()
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\database.py", line 19, in connection
-    con = mysql.connector.connect(host=host, user=username, password=password, db=db,cursorclass='')
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\mysql\connector\__init__.py", line 179, in connect
-    return MySQLConnection(*args, **kwargs)
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\mysql\connector\connection.py", line 95, in __init__
-    self.connect(**kwargs)
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\mysql\connector\abstracts.py", line 713, in connect
-    self.config(**kwargs)
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\mysql\connector\abstracts.py", line 303, in config
-    raise AttributeError("Unsupported argument '{0}'".format(key))
-AttributeError: Unsupported argument 'cursorclass'
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:03:29] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:03:29] "GET /favicon.ico HTTP/1.1" 404 -
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 22, in show_note
+    note = DBHelpers().see_note(slug)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 16, in see_note
+    self.mysql.execute("SELECT * FROM {}notes WHERE slug LIKE {} LIMIT 1".format(os.getenv('DATABASE_PREFIX'),note_slug))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'test' in 'where clause'")
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:14:30] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -261,35 +203,30 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes(userID)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 9, in list_user_notes
-    self.mysql.execute("SELECT * FROM {} WHERE user_id={}".format(self.database.get_notes_table_name(),user_id))
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\mysql\connector\cursor.py", line 536, in execute
-    if not self._connection:
-ReferenceError: weakly-referenced object no longer exists
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:07:18] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:database:NotSupportedError(-1, "Authentication plugin 'caching_sha2_password' is not supported", None), -1
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 22, in show_note
+    note = DBHelpers().see_note(slug)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 16, in see_note
+    self.mysql.execute("SELECT * FROM {}notes WHERE slug={}".format(os.getenv('DATABASE_PREFIX'),str(note_slug)))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'test' in 'where clause'")
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:15:32] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:15:32] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -305,16 +242,11 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes(userID)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 9, in list_user_notes
-    self.mysql.execute("SELECT * FROM {} WHERE user_id={}".format(self.database.get_notes_table_name(),user_id))
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\mysql\connector\cursor.py", line 536, in execute
-    if not self._connection:
-ReferenceError: weakly-referenced object no longer exists
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:11:21] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:11:21] "GET /favicon.ico HTTP/1.1" 404 -
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 24, in show_note
+    if note.public == 0:
+AttributeError: 'dict' object has no attribute 'public'
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:17:09] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -330,15 +262,11 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes(userID)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 9, in list_user_notes
-    self.helper.execute("SELECT * FROM {} WHERE user_id={}".format(self.database.get_notes_table_name(),user_id))
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\mysql\connector\cursor.py", line 536, in execute
-    if not self._connection:
-ReferenceError: weakly-referenced object no longer exists
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:14:08] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 24, in show_note
+    if note.public == 0:
+AttributeError: 'dict' object has no attribute 'public'
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:17:10] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -354,15 +282,11 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes(userID)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 9, in list_user_notes
-    self.helper.execute("SELECT * FROM {} WHERE user_id={}".format(self.database.get_notes_table_name(),user_id))
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\mysql\connector\cursor.py", line 536, in execute
-    if not self._connection:
-ReferenceError: weakly-referenced object no longer exists
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:14:09] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 25, in show_note
+    if note.public == 0:
+AttributeError: 'dict' object has no attribute 'public'
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:17:51] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -378,15 +302,14 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes(userID)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 9, in list_user_notes
-    self.helper.execute("SELECT * FROM  %s WHERE user_id=%d",(self.database.get_notes_table_name(),user_id))
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\mysql\connector\cursor.py", line 536, in execute
-    if not self._connection:
-ReferenceError: weakly-referenced object no longer exists
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:16:37] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 25, in show_note
+    if note.public == 0:
+AttributeError: 'dict' object has no attribute 'public'
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:18:15] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:18:30] "GET /api/v1/show/note/test HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:19:15] "GET /api/v1/show/note/test HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:19:19] "GET /api/v1/show/note/test HTTP/1.1" 200 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -402,15 +325,12 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes(userID)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 9, in list_user_notes
-    self.helper.execute("SELECT * FROM  %s WHERE user_id=%d",(self.database.get_notes_table_name(),user_id))
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\mysql\connector\cursor.py", line 536, in execute
-    if not self._connection:
-ReferenceError: weakly-referenced object no longer exists
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:20:25] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 25, in show_note
+    return jsonify(note).public
+AttributeError: 'Response' object has no attribute 'public'
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:19:38] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:19:56] "GET /api/v1/show/note/test HTTP/1.1" 200 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -426,15 +346,13 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes(userID)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 9, in list_user_notes
-    self.helper.execute("SELECT * FROM  %s WHERE user_id=%d",(self.database.get_notes_table_name(),user_id))
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\mysql\connector\cursor.py", line 536, in execute
-    if not self._connection:
-ReferenceError: weakly-referenced object no longer exists
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:20:25] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 27, in show_note
+    return note.public
+AttributeError: 'dict' object has no attribute 'public'
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:21:42] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:21:42] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:22:02] "GET /api/v1/show/note/test HTTP/1.1" 200 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -450,15 +368,13 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes(userID)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 9, in list_user_notes
-    self.helper.execute("SELECT * FROM  %s WHERE user_id=%d",(self.database.get_notes_table_name(),user_id))
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\mysql\connector\cursor.py", line 536, in execute
-    if not self._connection:
-ReferenceError: weakly-referenced object no longer exists
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:24:54] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 24, in show_note
+    json.loads(note)
+  File "C:\Users\lubom\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:27:57] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -474,13 +390,11 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes(userID)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 9, in list_user_notes
-    self.cursor.execute("SELECT * FROM  %s WHERE user_id=%d",(self.database.get_notes_table_name(),user_id))
-AttributeError: 'function' object has no attribute 'execute'
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:26:56] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 24, in show_note
+    note = json.loads(note)
+UnboundLocalError: local variable 'note' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:29:27] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -496,13 +410,11 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes(userID)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 9, in list_user_notes
-    self.cursor.execute("SELECT * FROM  %s WHERE user_id=%d",(self.database.get_notes_table_name(),user_id))
-AttributeError: 'function' object has no attribute 'execute'
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:26:56] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 24, in show_note
+    note = json.loads(note)
+UnboundLocalError: local variable 'note' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:29:28] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -518,14 +430,11 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes(userID)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 9, in list_user_notes
-    cursor = self.cursor.execute("SELECT * FROM  %s WHERE user_id=%d",(self.database.get_notes_table_name(),user_id))
-AttributeError: 'function' object has no attribute 'execute'
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:28:10] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:28:10] "GET /favicon.ico HTTP/1.1" 404 -
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 24, in show_note
+    note = json.loads(note)
+UnboundLocalError: local variable 'note' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:29:28] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -541,13 +450,11 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes(userID)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 9, in list_user_notes
-    cursor = self.cursor.execute("SELECT * FROM  %s WHERE user_id=%d",(self.database.get_notes_table_name(),user_id))
-AttributeError: 'function' object has no attribute 'execute'
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:28:11] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 24, in show_note
+    note = json.loads(note)
+UnboundLocalError: local variable 'note' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:29:28] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -563,13 +470,11 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes(userID)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 6, in __init__
-    self.dbcursor = database.cursor()
-NameError: name 'database' is not defined
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:30:06] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 24, in show_note
+    note = json.loads(note)
+UnboundLocalError: local variable 'note' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:29:29] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -585,13 +490,11 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes(userID)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 9, in list_user_notes
-    cursor = self.dbcursor.execute("SELECT * FROM  %s WHERE user_id=%d",(self.database.get_notes_table_name(),user_id))
-AttributeError: 'MySQLConnection' object has no attribute 'get_notes_table_name'
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:30:31] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
-ERROR:index:Exception on /api/v1/user/1/notes [GET]
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 24, in show_note
+    note = json.loads(note)
+UnboundLocalError: local variable 'note' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:29:29] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
 Traceback (most recent call last):
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -607,11 +510,156 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 14, in index
-    user_notes = DBHelpers().list_user_notes(userID)
-  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\dbhelpers.py", line 9, in list_user_notes
-    cursor = self.dbcursor.execute("SELECT * FROM  %s WHERE user_id=%d",(self.database.get_notes_table_name(),user_id))
-  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\mysql\connector\cursor.py", line 536, in execute
-    if not self._connection:
-ReferenceError: weakly-referenced object no longer exists
-INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 18:31:27] "GET /api/v1/user/1/notes HTTP/1.1" 500 -
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 24, in show_note
+    note = json.loads(user_note)
+  File "C:\Users\lubom\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:30:22] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
+Traceback (most recent call last):
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 24, in show_note
+    note = json.loads(user_note)
+  File "C:\Users\lubom\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:31:30] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:31:30] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
+Traceback (most recent call last):
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 24, in show_note
+  File "C:\Users\lubom\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:31:57] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
+Traceback (most recent call last):
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 25, in show_note
+    return jsonify(note)
+NameError: name 'note' is not defined
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:32:06] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
+Traceback (most recent call last):
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 25, in show_note
+    return jsonify(note)
+NameError: name 'note' is not defined
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:32:06] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
+Traceback (most recent call last):
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 25, in show_note
+    return jsonify(note)
+NameError: name 'note' is not defined
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:32:07] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
+Traceback (most recent call last):
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 25, in show_note
+    return jsonify(note)
+NameError: name 'note' is not defined
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:32:10] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:32:28] "GET /api/v1/show/note/test HTTP/1.1" 200 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
+Traceback (most recent call last):
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 24, in show_note
+    json_dict = json.loads(note)
+  File "C:\Users\lubom\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:34:01] "GET /api/v1/show/note/test HTTP/1.1" 500 -
