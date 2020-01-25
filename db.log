@@ -663,3 +663,413 @@ Traceback (most recent call last):
     raise TypeError(f'the JSON object must be str, bytes or bytearray, '
 TypeError: the JSON object must be str, bytes or bytearray, not dict
 INFO:werkzeug:127.0.0.1 - - [24/Jan/2020 23:34:01] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
+Traceback (most recent call last):
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 24, in show_note
+    json_dict = json.loads(note)
+  File "C:\Users\lubom\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:07:48] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
+Traceback (most recent call last):
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 24, in show_note
+    json_dict = json.loads(note)
+  File "C:\Users\lubom\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:08:42] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
+Traceback (most recent call last):
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 25, in show_note
+    note_dict = json.loads(note_to_json)
+  File "C:\Users\lubom\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not Response
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:10:49] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
+Traceback (most recent call last):
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 25, in show_note
+    note_dict = json.dumps(note_to_json)
+  File "C:\Users\lubom\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Users\lubom\AppData\Local\Programs\Python\Python38\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\lubom\AppData\Local\Programs\Python\Python38\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\lubom\AppData\Local\Programs\Python\Python38\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Response is not JSON serializable
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:12:03] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:12:03] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
+Traceback (most recent call last):
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 25, in show_note
+    pprint(note_dict)
+NameError: name 'note_dict' is not defined
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:13:00] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:13:00] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:13:22] "GET /api/v1/show/note/test HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:14:52] "GET /api/v1/show/note/test HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:14:55] "GET /api/v1/show/note/test HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:15:20] "GET /api/v1/show/note/test HTTP/1.1" 200 -
+ERROR:index:Exception on /api/v1/show/note/test [GET]
+Traceback (most recent call last):
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2126, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a int.
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:17:20] "GET /api/v1/show/note/test HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:18:26] "GET /api/v1/show/note/test HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:19:51] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:19:52] "GET /api/v1/user/1/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:20:20] "GET /api/v1/show/note/test-1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:20:28] "GET /api/v1/show/note/test HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:20:56] "GET /api/v1/show/note/test HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:20:58] "GET /api/v1/show/note/test HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 13:21:12] "GET /api/v1/show/note/test HTTP/1.1" 404 -
+ERROR:index:Exception on /api/v1/user/login [POST]
+Traceback (most recent call last):
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 46, in login_user
+    else:
+AttributeError: 'Bcrypt' object has no attribute 'check_password'
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 14:05:14] "POST /api/v1/user/login HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 14:06:46] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 14:07:14] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 14:09:34] "POST /api/v1/user/login HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 14:39:32] "GET /api/v1/user/login HTTP/1.1" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 14:39:33] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 14:40:21] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 14:41:25] "GET /api/v1/user/notes HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 14:42:17] "GET /api/v1/user/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 14:42:35] "GET /api/v1/user/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 14:43:40] "GET /api/v1/user/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 14:59:36] "GET /api/v1/user/notes HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 15:00:11] "GET /api/v1/user/login HTTP/1.1" 405 -
+ERROR:index:Exception on /api/v1/user/login [POST]
+Traceback (most recent call last):
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 44, in login_user
+    if user['verified'] == 1:
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 15:00:22] "POST /api/v1/user/login HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/user/login [POST]
+Traceback (most recent call last):
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 47, in login_user
+    if user['verified'] == 1:
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 15:03:06] "POST /api/v1/user/login HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 15:05:50] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 15:06:14] "POST /api/v1/user/refresh HTTP/1.1" 422 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 15:06:25] "POST /api/v1/user/login HTTP/1.1" 200 -
+ERROR:index:Exception on /api/v1/user/refresh [POST]
+Traceback (most recent call last):
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 160, in wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 63, in refresh_user_token
+    token = create_access_token(identity={"userid":user['id']})
+KeyError: 'id'
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 15:06:38] "POST /api/v1/user/refresh HTTP/1.1" 500 -
+ERROR:index:Exception on /api/v1/user/refresh [POST]
+Traceback (most recent call last):
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\lubom\documents\web development\user-notes-api\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 160, in wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\lubom\Documents\Web Development\User-Notes-Api\index.py", line 63, in refresh_user_token
+    token = create_access_token(identity={"userid":user['userid']})
+KeyError: 'id'
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 15:08:08] "POST /api/v1/user/refresh HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 15:10:13] "GET /api/v1/user/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 15:12:51] "GET /api/v1/user/notes HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 15:32:49] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 15:33:12] "POST /api/v1/user HTTP/1.1" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 15:33:18] "GET /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 15:35:12] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 15:56:37] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:26:28] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:26:39] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:28:02] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:28:12] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:28:12] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:29:36] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:29:39] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:29:40] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:29:41] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:29:42] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:29:43] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:29:43] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:29:44] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:29:45] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:29:45] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:29:46] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:29:54] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:31:38] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:42:37] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:53:48] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:53:51] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:53:52] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:53:52] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:53:52] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:53:57] "POST /api/v1/user/login HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:53:57] "POST /api/v1/user/login HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:53:58] "POST /api/v1/user/login HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:53:58] "POST /api/v1/user/login HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:53:58] "POST /api/v1/user/login HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:54:11] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:54:12] "POST /api/v1/user/login HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:54:23] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:54:24] "POST /api/v1/user/login HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:54:28] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:54:28] "POST /api/v1/user/login HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:54:37] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 19:54:39] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:00:57] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:00:58] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:03:13] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:03:14] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:03:14] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:04:51] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:04:52] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:07:24] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:07:25] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:07:26] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:12:25] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:12:26] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:12:26] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:15:59] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:16:01] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:16:02] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:16:24] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:17:15] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:17:22] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:17:51] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:17:56] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:18:03] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:19:13] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:19:18] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:21:06] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:21:59] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:22:03] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:22:04] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:22:04] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:28:19] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:28:20] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:28:20] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:28:21] "OPTIONS /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:28:21] "GET /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:28:26] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:28:26] "OPTIONS /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:28:26] "GET /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:28:30] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:28:30] "OPTIONS /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:28:31] "GET /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:29:10] "OPTIONS /api/v1/user/1/notes HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:29:11] "OPTIONS /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:29:11] "GET /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:29:13] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:29:13] "OPTIONS /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:29:13] "GET /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:29:40] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:29:41] "OPTIONS /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:29:41] "GET /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:29:54] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:29:55] "OPTIONS /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:29:55] "GET /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:29:57] "OPTIONS /api/v1/user/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:29:57] "GET /api/v1/user/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:30:02] "OPTIONS /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:30:02] "GET /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:31:51] "OPTIONS /api/v1/user/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:31:51] "GET /api/v1/user/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:31:53] "OPTIONS /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:31:53] "GET /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:32:14] "OPTIONS /api/v1/user/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:32:14] "GET /api/v1/user/notes HTTP/1.1" 422 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:33:01] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:36:38] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:36:39] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:36:39] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:36:40] "OPTIONS /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:36:40] "GET /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:36:47] "OPTIONS /api/v1/user/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:36:47] "GET /api/v1/user/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:37:34] "OPTIONS /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:37:34] "GET /api/v1/user HTTP/1.1" 422 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:39:18] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:39:36] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:39:37] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:39:37] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:39:37] "OPTIONS /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:39:37] "GET /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:39:44] "OPTIONS /api/v1/user/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:39:44] "GET /api/v1/user/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:39:48] "OPTIONS /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:39:48] "GET /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:39:56] "OPTIONS /api/v1/user/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:39:56] "GET /api/v1/user/notes HTTP/1.1" 422 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:02] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:02] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:03] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:03] "OPTIONS /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:03] "GET /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:12] "OPTIONS /api/v1/user/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:12] "GET /api/v1/user/notes HTTP/1.1" 422 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:17] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:18] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:18] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:18] "OPTIONS /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:18] "GET /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:21] "OPTIONS /api/v1/user/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:21] "GET /api/v1/user/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:25] "OPTIONS /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:25] "GET /api/v1/user HTTP/1.1" 422 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:28] "OPTIONS /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:30] "POST /api/v1/user/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:30] "GET /api/v1/user HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:30] "OPTIONS /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:40:30] "GET /api/v1/user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:42:08] "OPTIONS /api/v1/user/notes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jan/2020 20:42:08] "GET /api/v1/user/notes HTTP/1.1" 200 -
