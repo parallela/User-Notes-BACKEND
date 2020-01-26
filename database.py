@@ -4,6 +4,7 @@ import os
 import logging
 import sys
 
+
 class Database:
     def __init__(self):
         # DB logging
@@ -20,10 +21,10 @@ class Database:
         db = os.getenv('DATABASE_DB')
 
         try:
-            con = pymysql.connect(host=host, user=username, password=password, db=db)
+            con = pymysql.connect(host=host, user=username, password=password, db=db, autocommit=True)
             cursor = con.cursor(pymysql.cursors.DictCursor)
         except pymysql.Error as e:
-            self.logger.error("{!r}, {}".format(e,e.args[0]))
+            self.logger.error("{!r}, {}".format(e, e.args[0]))
             sys.exit(1)
 
         return cursor
