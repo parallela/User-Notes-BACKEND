@@ -73,3 +73,13 @@ class DBHelpers:
                 return validation
         else:
             return jsonify({"error": "Невалидна Е-Поща!"}), 401
+
+    def get_user_statistics(self, user_id):
+        user_private_notes = self.mysql.execute("SELECT * FROM {}notes WHERE public=0".format(self.dbprefix))
+        user_public_notes = self.mysql.execute("SELECT * FROM {}notes WHERE public=1".format(self.dbprefix))
+        user_amount_of_copies = self.mysql.execute("SELECT * from {}notes WHERE amount_of_copies>0".format(self.dbprefix))
+
+        data_dict = dict(user_private_notes_amount=user_private_notes, user_public_notes_amount=user_public_notes,
+                         user_note_copies=user_amount_of_copies)
+
+        return data_dict

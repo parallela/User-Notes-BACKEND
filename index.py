@@ -8,10 +8,7 @@ from flask_jwt_extended import JWTManager, jwt_required, create_access_token, ge
     jwt_refresh_token_required, create_refresh_token
 from dbhelpers import DBHelpers
 import datetime
-# logging
-from pprint import pprint
 
-import json
 
 app = Flask(__name__)
 bcrypt = Bcrypt(app)
@@ -52,8 +49,9 @@ def login_user():
 
     if user['verified'] == 1:
         if bcrypt.check_password_hash(user['password'], password):
-            token = create_access_token(identity={"userid": user['id']})
-            refresh_token = create_refresh_token(identity={"userid": user['id']})
+            expires = datetime.timedelta(days=1)
+            token = create_access_token(identity={"userid": user['id']},expires_delta=expires)
+            refresh_token = create_refresh_token(identity={"userid": user['id']},expires_delta=expires)
             result = jsonify({"token": token, "refresh_token": refresh_token})
         else:
             result = jsonify({"error": "Невалидни данни"}), 401
@@ -77,9 +75,11 @@ def register_user():
 @jwt_refresh_token_required
 def refresh_user_token():
     user = get_jwt_identity()
-    token = create_access_token(identity={"userid": user['userid']})
+    expires = datetime.timedelta(days=1)
+    token = create_access_token(identity={"userid": user['userid']},expires_delta=expires)
+    refresh_token = create_refresh_token(identity={"userid": user['id']})
 
-    return jsonify({'token': token}), 200
+    return jsonify({'token': token,'refresh_token': refresh_token}), 200
 
 
 @app.route('/api/v1/user')
@@ -89,3 +89,11 @@ def user():
     result = DBHelpers().get_user_data(user['userid'])
 
     return jsonify(result)
+
+@app.route('/api/v1/user/stats')
+@jwt_required
+def user_stats():
+    user = get_jwt_identity()
+    user_stats = DBHelpers().get_user_statistics(user['userid'])
+
+    return user_stats

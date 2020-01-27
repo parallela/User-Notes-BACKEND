@@ -7,11 +7,6 @@ import sys
 
 class Database:
     def __init__(self):
-        # DB logging
-        logging.basicConfig(filename="db.log")
-        self.logger = logging.getLogger(__name__)
-        self.logger.setLevel(logging.DEBUG)
-
         self.db = self.connection()
 
     def connection(self):
@@ -24,7 +19,6 @@ class Database:
             con = pymysql.connect(host=host, user=username, password=password, db=db, autocommit=True)
             cursor = con.cursor(pymysql.cursors.DictCursor)
         except pymysql.Error as e:
-            self.logger.error("{!r}, {}".format(e, e.args[0]))
             sys.exit(1)
 
         return cursor
